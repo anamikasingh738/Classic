@@ -1,0 +1,244 @@
+/*
+Theme Name: Classic
+Theme URI: http://wordpress.org/
+Description: The original WordPress theme that graced versions 1.2.x and prior.
+Version: 1.6
+Author: Dave Shea
+Tags: green, white, two-columns, right-sidebar, flexible-width, sticky-post, rtl-language-support, translation-ready
+
+Default WordPress by Dave Shea || http://mezzoblue.com
+Modifications by Matthew Mullenweg || http://photomatt.net
+This is just a basic layout, with only the bare minimum defined.
+Please tweak this and make it your own. :)
+*/
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Light.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Thin.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeueRegular.woff2') format('woff2'),
+        url('fonts/HelveticaNeueRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue.woff2') format('woff2'),
+        url('fonts/HelveticaNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Italic.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+.screen-reader-text {
+     position: absolute;
+     left: -1000em;
+}
+
+
+
+
+
+
+body {
+	background: #fff;
+	
+	color: #000;
+	font-family: 'Helvetica Neue';
+	margin: 0;
+	padding: 0;
+}
+
+/* End captions & aligment */
+div#content {
+    padding: 50px 0px;
+}
+.row.imagetiles .col-12.col-lg-4.col-md-6 ,.row.imagetiles .col-12.col-lg-3.col-md-6{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.contentwrapper h4 a {
+    color: #323031;
+    font-size:20px;
+    line-height:35px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding:50px 0px;
+}
+.contentwrapper {
+padding:10px 0px;;
+}
+a.viewmorebtn {
+background: #F48120;
+border-radius: 4px;
+color:#323031;
+width: 297px;
+height: 50px;
+display:block;  
+text-align:center;
+line-height:50px;
+font-size:16px;
+font-weight:700;
+margin:20px auto;
+}
+i.round.slick-arrow {
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    z-index: 99999;
+}
+i.left.round{
+    left: 51px;
+}
+i.round.slick-arrow img {
+    width: 40px;
+}
+section.testimonial {
+    background: #4C4D4E;
+    padding: 4em 0 2em 0;
+}
+section.testimonial h2 {
+color:#fff;
+font-weight: 600;
+font-size: 40px;
+line-height: 40px;
+margin-bottom:50px;
+}
+.slidewrappwer {
+    display: block;
+}
+
+.slidecontent {
+    background: #fff;
+    padding: 60px;
+    width: 555px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 99;
+}
+.testimonial-slide-item {
+    padding-top:60px;
+}
+.slidecontent p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color:#474747;
+}
+.slidecontent h4 {
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+color:#323031;
+}
+a.viewtestimonials {
+width: 194px;
+height: 40px;
+line-height:40px;
+background:#F48120;
+font-weight: 700;
+font-size: 16px;
+text-align:center;
+color: #323031;
+display:block;
+float:right;  
+}
+.viewmorebtn.talktoteam {
+display:none;
+}
+.videoheight {
+height:356px;
+}
+ @media only screen and (min-width: 768px)  and (max-width: 900px) {
+i.left.round {
+    left: 55%;
+}
+i.right.round.slick-arrow {
+    left: 45%;
+}
+ }
+ @media only screen and (min-width: 320px) and (max-width: 767px) {
+i.left.round {
+    left: 55%;
+}
+i.right.round.slick-arrow {
+    left: 40%;
+}
+.videoheight {
+height:275px;
+}
+}
+ @media only screen and (min-width: 320px)  and (max-width: 900px) {
+.viewmorebtn.talktoteam {
+display:block;
+margin-top: 120px;
+ color: #fff;
+}
+.slidecontent {
+    background: #fff;
+    padding: 40px;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    z-index: 99;
+}
+a.viewtestimonials {
+display:none;
+}
+.testimonial-slide-item {
+    padding-top:0px;
+}
+section.testimonial {
+    background: #4C4D4E;
+    padding: 6em 0 8em 0;
+}
+i.round.slick-arrow {
+    position: absolute;
+    bottom: -80px;
+}
+}
