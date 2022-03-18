@@ -21,7 +21,7 @@
 		?>
         <div class="col-12 col-lg-4 col-md-6">
 		<div class="imgrapper">
-          <a href="<?php echo $tile_links['url'];?>"> <img src="<?php echo $tile_image;?>" class="img-responsive"></a>
+         <a href="<?php echo $tile_links['url'];?>"> <img src="<?php echo $tile_image;?>" class="img-fluid"></a>
 		</div>
 		<div class="contentwrapper">
 		<h4><a href="<?php echo $tile_links['url'];?>"><?php echo $tile_title;?></a></h4>
@@ -42,7 +42,7 @@
 		?>
       <div class="col-12 col-lg-3 col-md-6">
 		<div class="imgrapper">
-          <a href="<?php echo $tile_links['url'];?>"> <img src="<?php echo $tile_image;?>" class="img-responsive"></a>
+          <a href="<?php echo $tile_links['url'];?>"> <img src="<?php echo $tile_image;?>" class="img-fluid"></a>
 		</div>
 		<div class="contentwrapper">
 		<h4><a href="<?php echo $tile_links['url'];?>"><?php echo $tile_title;?></a></h4>
@@ -83,9 +83,9 @@
  <div class="col-12 col-lg-7 col-md-12">
  <div class="slidemedia">
 <?php if($chose_imagevideo=='vid'){?>
-<iframe src="<?php echo $video_url;?>" allowfullscreen="1" width="100%" height="356"></iframe>
+<iframe src="<?php echo $video_url;?>" allowfullscreen="1" width="100%" class="videoheight"></iframe>
 <?php } else {?>
-<img src="<?php echo $testimonial_image;?>"  class="img-responsive">
+<img src="<?php echo $testimonial_image;?>"  class="img-fluid">
 <?php } ?>
   <a class="viewtestimonials" href="#">View testimonials</a>
  </div>

@@ -201,6 +201,9 @@ i.left.round {
 i.right.round.slick-arrow {
     left: 45%;
 }
+.videoheight {
+height:267px;
+}
  }
  @media only screen and (min-width: 320px) and (max-width: 767px) {
 i.left.round {
@@ -210,7 +213,7 @@ i.right.round.slick-arrow {
     left: 40%;
 }
 .videoheight {
-height:275px;
+height:200px;
 }
 }
  @media only screen and (min-width: 320px)  and (max-width: 900px) {
